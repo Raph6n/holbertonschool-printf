@@ -11,7 +11,7 @@ int _printf(const char *format, ...)
 
 .SH DESCRIPTION
 
-_printf print to stdout, 
+_printf print to stdout, print argument(s) according to format. 
 
 
 %c - print a single character.
