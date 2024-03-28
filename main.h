@@ -19,4 +19,5 @@ int print_s(va_list argu);
 int print_prc(va_list argu);
 int print_dec(va_list argu);
 int _putchar(char c);
+int print_recursion_dec(int n);
 #endif
