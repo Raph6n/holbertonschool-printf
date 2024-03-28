@@ -18,5 +18,5 @@ int print_c(va_list argu);
 int print_s(va_list argu);
 int print_prc(va_list argu);
 int print_dec(va_list argu);
-int _putchar(char c);
+int _putchar(char c)
 #endif

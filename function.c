@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_char - function that display a character
+ * print_c - function that display a character
  * @ap: va list
  * Return: 1 success.
 */
@@ -18,7 +18,7 @@ int print_c(va_list argu)
 }
 
 /**
- * print_str - function that print a strings
+ * print_s - function that print a strings
  * @ap: va list
  * Return: string characters
 */
@@ -42,7 +42,7 @@ int print_s(va_list argu)
 }
 
 /**
- * print_percent - function that print %.
+ * print_prc - function that print %.
  * @ap: va list
  * 
 */
@@ -67,7 +67,7 @@ int print_recursion_dec(int n)
 }
 
 /**
- * print_decimal - print a decimal (base 10) number
+ * print_dec - print a decimal (base 10) number
  * @ap: va list
  * Return: 1 success
  */
