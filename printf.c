@@ -3,20 +3,6 @@
 int _printf(const char *format, ...)
 {
 
-  int i = 0, index, printall = 0;
-  va_list argu;
-
-  functions list[] = {
-    {'c', print_c},
-    {'s', print_s},
-    {'d', print_dec},
-    {'i', print_dec},
-    {'%', print_prc},
-    {'\0', NULL},
-  };
-  va_start(argu, format);
-
-  while (format && format[i])
 
 int _printf(const char *format, ...)
 {
