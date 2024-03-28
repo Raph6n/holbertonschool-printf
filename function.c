@@ -55,33 +55,33 @@ int print_prc(va_list argu)
     return (1);
 }
 
-int print_recursion_dec(int n)
-{
-    int i = 1;
-    if (n / 10)
-    {
-        i += print_recursion_dec(n / 10);
-        }
-    _putchar(n % 10 + '0');
-    return (i);
-}
-
+#include "main.h"
 /**
- * print_dec - print a decimal (base 10) number
- * @ap: va list
- * Return: 1 success
- */
+ * p_int_rec - print int digits
+ * @n: number
+ * @count: digits counter
+ * Return: return the digits counter
+*/
+int print_recursion_decimal(int n)
+{
+	int i = 1;
+	if (n / 10)
+	{
+		i += print_recursion_decimal(n / 10);
+	}
+	_putchar(n % 10 + '0');
+	return (i);
+}
 int print_dec(va_list argu)
 {
-        int i = 0, n = 0;
-        n = va_arg(argu, int);
-        if (n < 0)
-        {
-            _putchar ('-');
-            n = (-1)* n;
-            i++;
-        };
-        i += print_recursion_dec(n);
-        return (i);
-        
+	int i = 0, n = 0;
+	n = va_arg(argu, int);
+	if (n < 0)
+	{
+		_putchar ('-');
+		n = (-1)* n;
+		i++;
+	};
+	i += print_recursion_decimal(n);
+	return (i);
 }
