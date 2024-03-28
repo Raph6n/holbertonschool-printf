@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
 
     while (format && format[i])
     {
-        if (format[i] == '%')
+        if (format[i] == '%' && (format[i+1] != 'K') && format [i+1] != '!')
         {
             index = 0;
             i++;
