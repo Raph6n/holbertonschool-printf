@@ -18,7 +18,8 @@ int _printf(const char *format, ...)
                 {'\0', NULL},
  };
     va_start(argu, format);
-
+    if (format == NULL || (format[i+1] == '%' && format[1] == '\0'))
+        return (-1);
     while (format && format[i])
     {
         if (format[i] == '%' && (format[i+1] != 'K') && format [i+1] != '!')
