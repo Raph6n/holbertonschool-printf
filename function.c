@@ -50,7 +50,7 @@ int print_s(va_list argu)
 int print_prc(va_list argu)
 {
     (void) argu;
-    _putchar('%');
+    _putchar(37);
 
     return (1);
 }
@@ -61,7 +61,7 @@ int print_recursion_dec(int n)
     if (n / 10)
     {
         i += print_recursion_dec(n / 10);
-    }
+        }
     _putchar(n % 10 + '0');
     return (i);
 }
