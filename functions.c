@@ -14,34 +14,6 @@ int print_s(va_list argu)
     return (i); /* return result */
 }
 
-int recursiveforint(unsigned int nbr)
-{
-  int count = 0;
-  if (nbr / 10)
-    {
-      count += recursiveforint(n /10);
-    }
-  _putchar (nbr % 10 + '0');
-  count++;
-  return (count);
-}
-int print_dec(va_list argu)
-{
-  int nbr = va_arg(argu, int)
-    int count = 0;
-
-  if (nbr < 0)
-    {
-      _putchar('-');
-      count++;
-      count += recursiveforint(-(unsigned int)nbr));
-}
- else
-   {
-     count += recursiveforint(nbr);
-
-     return (count);
-   }
   
 		 
   
