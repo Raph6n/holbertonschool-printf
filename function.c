@@ -54,34 +54,28 @@ int print_prc(va_list argu)
 
     return (1);
 }
-
-#include "main.h"
-/**
- * p_int_rec - print int digits
- * @n: number
- * @count: digits counter
- * Return: return the digits counter
-*/
-int print_recursion_decimal(int n)
+int print_dec(va_list args)
 {
-	int i = 1;
-	if (n / 10)
-	{
-		i += print_recursion_decimal(n / 10);
-	}
-	_putchar(n % 10 + '0');
-	return (i);
-}
-int print_dec(va_list argu)
-{
-	int i = 0, n = 0;
-	n = va_arg(argu, int);
-	if (n < 0)
-	{
-		_putchar ('-');
-		n = (-1)* n;
-		i++;
-	};
-	i += print_recursion_decimal(n);
-	return (i);
+    int n = va_arg(args, int);
+    int reversed = 0, sign = n < 0;
+    int count = 0;
+    if (sign) {
+        _putchar('-');
+        count++;
+        n = -n;
+    }
+    while (n != 0) {
+        reversed = reversed * 10 + (n % 10);
+        n /= 10;
+    }
+    while (reversed != 0) {
+        _putchar((reversed % 10) + '0');
+        reversed /= 10;
+        count++;
+    }
+    if (count == 0 || (count == 1 && sign)) {
+        _putchar('0');
+        count++;
+    }
+    return count;
 }
