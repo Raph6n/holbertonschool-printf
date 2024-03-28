@@ -20,7 +20,7 @@ va_list argu;
                 {'\0', NULL},
  };
     va_start(argu, format);
-    if (format == NULL || (format[i+1] == '%' && format[1] == '\0'))
+    if (format == NULL || (format[i] == '%' && format[1] == '\0'))
         return (-1);
     while (format && format[i])
     {
