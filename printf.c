@@ -1,10 +1,6 @@
 #include "main.h"
-/**
- * _printf - function that print
- * @format: var
- * Return: printall
- *
-*/
+
+
 int _printf(const char *format, ...)
 {
 
@@ -24,28 +20,34 @@ va_list argu;
         return (-1);
     while (format && format[i])
     {
-        if (format[i] == '%' && (format[i+1] != 'K') && format [i+1] != '!')
+      if (format[i] == '%' && (format[i+1] != 'K') && format [i+1] != '!')
+	{
         {
+
+	  index = 0;
+	  i++;
+	  while (list[index].let != '\0')
+	    {
             index = 0;
             i++;
         
             while (list[index].let != '\0')
+
             {
-                if (list[index].let == format[i])
+	      if (list[index].let == format[i])
                 {
-                    printall += list[index].printf(argu);
-                    break;
+		  printall += list[index].printf(argu);
+		  break;
                 }
-                index++;
+	      index++;
             }
         }
-    
-    else
-    {
-        _putchar(format[i]);
-        printall++;
-        }
-        i++;
-    }
-    return(printall);
+      else
+	{
+	  _putchar(format[i]);
+	  printall++;
+	}
+      i++;
+  
+  return(printall);
 }
