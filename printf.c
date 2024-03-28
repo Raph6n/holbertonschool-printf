@@ -1,9 +1,5 @@
 #include "main.h"
-/**
- * _printf - function that print
-<<<<<<< HEAD
- * 
- */
+
 int _printf(const char *format, ...)
 {
 
@@ -21,11 +17,7 @@ int _printf(const char *format, ...)
   va_start(argu, format);
 
   while (format && format[i])
-=======
- * @format: var
- * Return: printall
- *
-*/
+
 int _printf(const char *format, ...)
 {
 
@@ -44,21 +36,20 @@ va_list argu;
     if (format == NULL || (format[i] == '%' && format[1] == '\0'))
         return (-1);
     while (format && format[i])
->>>>>>> refs/remotes/origin/main
     {
       if (format[i] == '%' && (format[i+1] != 'K') && format [i+1] != '!')
 	{
         {
-<<<<<<< HEAD
+
 	  index = 0;
 	  i++;
 	  while (list[index].let != '\0')
-=======
+
             index = 0;
             i++;
         
             while (list[index].let != '\0')
->>>>>>> refs/remotes/origin/main
+
             {
 	      if (list[index].let == format[i])
                 {
@@ -68,14 +59,12 @@ va_list argu;
 	      index++;
             }
         }
-<<<<<<< HEAD
       else
 	{
 	  _putchar(format[i]);
 	  printall++;
 	}
       i++;
-=======
     
     else
     {
@@ -83,7 +72,7 @@ va_list argu;
         printall++;
         }
         i++;
->>>>>>> refs/remotes/origin/main
+
     }
   return(printall);
 }
