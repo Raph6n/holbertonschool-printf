@@ -27,7 +27,7 @@ va_list argu;
 	  index = 0;
 	  i++;
 	  while (list[index].let != '\0')
-
+	    {
             index = 0;
             i++;
         
@@ -48,14 +48,6 @@ va_list argu;
 	  printall++;
 	}
       i++;
-    
-    else
-    {
-        _putchar(format[i]);
-        printall++;
-        }
-        i++;
-
-    }
+  
   return(printall);
 }
