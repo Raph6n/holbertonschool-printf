@@ -54,26 +54,26 @@ int print_prc(va_list argu)
 
     return (1);
 }
-int print_dec(va_list args)
+int print_dec(va_list argu)
 {
-    int n = va_arg(args, int);
-    int reversed = 0, sign = n < 0;
+    int n = va_arg(argu, int);
+    int recur = 0, symbol = n < 0;
     int count = 0;
-    if (sign) {
+    if (symbol) {
         _putchar('-');
         count++;
         n = -n;
     }
     while (n != 0) {
-        reversed = reversed * 10 + (n % 10);
+        recur = recur * 10 + (n % 10);
         n /= 10;
     }
-    while (reversed != 0) {
-        _putchar((reversed % 10) + '0');
-        reversed /= 10;
+    while (recur != 0) {
+        _putchar((recur % 10) + '0');
+        recur /= 10;
         count++;
     }
-    if (count == 0 || (count == 1 && sign)) {
+    if (count == 0 || (count == 1 && symbol)) {
         _putchar('0');
         count++;
     }
