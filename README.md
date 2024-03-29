@@ -28,7 +28,7 @@ int _printf(const char *format, ...);
 |    %s     | prints a string          | _printf("%s", "let's code"); --> "let's code"  |
 |    %i     | prints an integer        | _printf("%i", 33);           --> "33"          |
 |    %d     | prints a decimal number  | _printf("%d", -33);          --> "-33"         |
-
+|     %     |
 
 
 ## Authors
