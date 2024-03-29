@@ -2,7 +2,7 @@
 
 /**
  * print_c - function that display a character
- * @ap: va list
+ * @argu: va list
  * Return: 1 success.
 */
 
@@ -19,7 +19,7 @@ int print_c(va_list argu)
 
 /**
  * print_s - function that print a strings
- * @ap: va list
+ * @argu: va list
  * Return: string characters
 */
 
@@ -43,7 +43,7 @@ int print_s(va_list argu)
 
 /**
  * print_prc - function that print %.
- * @ap: va list
+ * @argu: va list
  * 
 */
 
