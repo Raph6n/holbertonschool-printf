@@ -10,7 +10,7 @@ Hello👋🏻
 ## Task and Team
 
 This project was released by Malak, Raphael and Houcine in Holbertonschool's Bordeaux.
-For this project called "Printf" we had one week to complete it. The tasks were divided equally between myself, Malak and Raphael.
+For this project called "Printf" we had one week to complete it. 
 
 ## Printf concept
 
