@@ -34,10 +34,11 @@ _printf("Integer: %d", integer);
 
 .SH BUGS
 
-if bug send mail to "8773@holbertonstudents.com" or 
+if bug send mail to "8773@holbertonstudents.com"  
 
 .SH AUTHORS
 
+Houcine Tiab, Malak Sarhani and Raphael Naim
 
 
 
